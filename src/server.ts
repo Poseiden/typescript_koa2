@@ -1,15 +1,10 @@
 import * as Koa from 'koa';
-import * as Router from 'koa-router';
+import { routes } from './config/configRoute';
 
 const app = new Koa();
-const router = new Router();
 
-router.get('/*', async (ctx) => {
-  ctx.body = 'Hello world!';
-});
-
-app.use(router.routes());
+app.use(routes);
 
 app.listen(3000);
 
-console.log('The server is run on koa!!!');
+console.log('The server is run on 3000 port!');
