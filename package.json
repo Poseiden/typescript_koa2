@@ -2,6 +2,9 @@
   "name": "api",
   "version": "1.0.0",
   "description": "The api backend of MySpace.",
+  "scripts": {
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts" 
+  },
   "dependencies": {
     "koa": "^2.4.1",
     "koa-router": "^7.3.0"
