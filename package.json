@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "The api backend of MySpace.",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^4.0.1",
+    "typescript": "^2.6.1"
+  }
+}
