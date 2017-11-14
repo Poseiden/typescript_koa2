@@ -6,7 +6,8 @@
     "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "compile": "tsc -p ./",
-    "test": "yarn compile && mocha --exit --recursive ./dist/test/**/*.spec.js"
+    "test": "yarn compile && mocha --exit --recursive ./dist/test/**/*.spec.js",
+    "clean": "rm -rf dist/*"
   },
   "dependencies": {
     "koa": "^2.4.1",
