@@ -2,6 +2,8 @@
   "name": "my-space-api",
   "version": "1.0.0",
   "description": "The api backend of MySpace.",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
