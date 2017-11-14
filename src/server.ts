@@ -1,7 +1,7 @@
-import * as Koa from 'koa';
+import { createApp } from './config/createApp';
 import { routes } from './config/configRoute';
 
-const app = new Koa();
+const app = createApp();
 
 app.use(routes);
 
